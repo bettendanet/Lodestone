@@ -1,6 +1,6 @@
 package team.lodestar.lodestone.registry.common;
 
-import io.github.fabricators_of_create.porting_lib.util.DeferredRegister;
+import io.github.fabricators_of_create.porting_lib.registry.DeferredRegister;
 import net.minecraft.client.renderer.blockentity.*;
 import net.minecraft.core.DefaultedRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;

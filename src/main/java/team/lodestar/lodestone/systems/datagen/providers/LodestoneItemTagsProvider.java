@@ -1,8 +1,7 @@
 package team.lodestar.lodestone.systems.datagen.providers;
 
-import io.github.fabricators_of_create.porting_lib.data.ExistingFileHelper;
-import io.github.fabricators_of_create.porting_lib.util.DeferredHolder;
-import io.github.fabricators_of_create.porting_lib.util.DeferredRegister;
+import io.github.fabricators_of_create.porting_lib.registry.DeferredHolder;
+import io.github.fabricators_of_create.porting_lib.registry.DeferredRegister;
 import net.minecraft.core.*;
 import net.minecraft.core.registries.*;
 import net.minecraft.data.*;

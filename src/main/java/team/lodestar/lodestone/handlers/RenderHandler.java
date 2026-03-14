@@ -188,8 +188,8 @@ public class RenderHandler {
     }
 
     public static void enableStencil() {
-        if (Minecraft.getInstance().getMainRenderTarget().isStencilEnabled()) {
-            LODESTONE_DEPTH_CACHE.enableStencil();
+        if (Minecraft.getInstance().getMainRenderTarget().port_lib$isStencilEnabled()) {
+            LODESTONE_DEPTH_CACHE.port_lib$enableStencil();
         }
     }
 

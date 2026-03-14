@@ -22,7 +22,6 @@ public class LodestoneDatagen implements DataGeneratorEntrypoint {
         var blocktags = generator.addProvider(LodestoneBlockTagDatagen::new);
         generator.addProvider((output, provider, helper) -> new LodestoneItemTagDatagen(output, provider, blocktags));
         generator.addProvider(LodestoneDamageTypeDatagen::new);
-        generator.addProvider(LodestoneLangDatagen::new);
         generator.addProvider(LodestoneDamageTypeDatagen::new);
     }
 

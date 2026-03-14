@@ -1,7 +1,7 @@
 package team.lodestar.lodestone.systems.blockentity;
 
-import io.github.fabricators_of_create.porting_lib.block.CustomDataPacketHandlingBlockEntity;
-import io.github.fabricators_of_create.porting_lib.block.CustomUpdateTagHandlingBlockEntity;
+import io.github.fabricators_of_create.porting_lib.blocks.extensions.CustomDataPacketHandlingBlockEntity;
+import io.github.fabricators_of_create.porting_lib.blocks.extensions.CustomUpdateTagHandlingBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;

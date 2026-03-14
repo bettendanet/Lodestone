@@ -1,7 +1,7 @@
 package team.lodestar.lodestone.registry.common;
 
 import com.mojang.brigadier.arguments.ArgumentType;
-import io.github.fabricators_of_create.porting_lib.util.DeferredRegister;
+import io.github.fabricators_of_create.porting_lib.registry.DeferredRegister;
 import net.minecraft.commands.synchronization.ArgumentTypeInfo;
 import net.minecraft.commands.synchronization.ArgumentTypeInfos;
 import net.minecraft.commands.synchronization.SingletonArgumentInfo;
