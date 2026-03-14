@@ -71,7 +71,7 @@ public class LodestoneLib implements ModInitializer {
         RuntimeEvents.entityJoin();
         RuntimeEvents.worldTick();
 
-        CuriosCompat.init();
+        LodestoneCompatManager.init();
 
         RuntimeEvents.onDeath();
         RuntimeEvents.onHurt();
