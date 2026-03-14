@@ -1,12 +1,9 @@
 package team.lodestar.lodestone.compability;
 
+import team.lodestar.lodestone.config.ClientConfig;
+
 public class LodestoneCompatManager {
     public static void init() {
         CuriosCompat.init();
-        AsyncParticlesCompat.init();
-    }
-
-    public static boolean stopBufferingParticles() {
-        return AsyncParticlesCompat.LOADED;
     }
 }

@@ -105,7 +105,7 @@ public class LodestoneWorldParticle extends TextureSheetParticle {
 
     public VertexConsumer getVertexConsumer(VertexConsumer original) {
         VertexConsumer consumerToUse = original;
-        if (ClientConfig.DELAYED_PARTICLE_RENDERING.getConfigValue() && !LodestoneCompatManager.stopBufferingParticles() && renderType instanceof LodestoneWorldParticleRenderType lodestoneRenderType) {
+        if (ClientConfig.DELAYED_PARTICLE_RENDERING.getConfigValue() && renderType instanceof LodestoneWorldParticleRenderType lodestoneRenderType) {
             consumerToUse = renderLayer.getParticleTarget().getBuffer(lodestoneRenderType.renderType);
         }
         return consumerToUse;
