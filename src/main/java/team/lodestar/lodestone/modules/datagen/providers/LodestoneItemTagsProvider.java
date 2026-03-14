@@ -1,4 +1,4 @@
-package team.lodestar.lodestone.systems.datagen.providers;
+package team.lodestar.lodestone.modules.datagen.providers;
 
 import io.github.fabricators_of_create.porting_lib.registry.DeferredHolder;
 import io.github.fabricators_of_create.porting_lib.registry.DeferredRegister;
@@ -6,15 +6,12 @@ import net.minecraft.core.*;
 import net.minecraft.core.registries.*;
 import net.minecraft.data.*;
 import net.minecraft.data.tags.*;
-import net.minecraft.resources.*;
 import net.minecraft.tags.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
-import org.jetbrains.annotations.*;
+import team.lodestar.lodestone.modules.datagen.LodestoneDatagenBlockData;
 import team.lodestar.lodestone.systems.block.*;
-import team.lodestar.lodestone.systems.datagen.*;
 
-import java.util.*;
 import java.util.concurrent.*;
 
 public abstract class LodestoneItemTagsProvider extends ItemTagsProvider {

@@ -1,4 +1,4 @@
-package team.lodestar.lodestone.systems.datagen;
+package team.lodestar.lodestone.modules.datagen;
 
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;

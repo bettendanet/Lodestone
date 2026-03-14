@@ -1,4 +1,4 @@
-package team.lodestar.lodestone.systems.datagen.providers;
+package team.lodestar.lodestone.modules.datagen.providers;
 
 import io.github.fabricators_of_create.porting_lib.data.ExistingFileHelper;
 import io.github.fabricators_of_create.porting_lib.models.generators.BlockStateProvider;
@@ -9,11 +9,9 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import team.lodestar.lodestone.systems.datagen.statesmith.ModularBlockStateSmith;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.BiFunction;
 
 public abstract class LodestoneBlockStateProvider extends BlockStateProvider {
 

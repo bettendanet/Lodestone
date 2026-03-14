@@ -1,8 +1,6 @@
 package team.lodestar.lodestone.systems.block;
 
-import io.github.fabricators_of_create.porting_lib.tags.data.DataGenerators;
 import net.fabricmc.api.EnvType;
-import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.impl.datagen.FabricDataGenHelper;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.renderer.RenderType;
@@ -19,7 +17,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.NotNull;
 import team.lodestar.lodestone.handlers.ThrowawayBlockDataHandler;
-import team.lodestar.lodestone.systems.datagen.LodestoneDatagenBlockData;
+import team.lodestar.lodestone.modules.datagen.LodestoneDatagenBlockData;
 
 import java.util.function.Function;
 import java.util.function.Supplier;

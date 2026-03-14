@@ -1,18 +1,15 @@
-package team.lodestar.lodestone.systems.datagen.providers;
+package team.lodestar.lodestone.modules.datagen.providers;
 
 import io.github.fabricators_of_create.porting_lib.registry.DeferredHolder;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.*;
-import net.minecraft.data.PackOutput;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
-import org.jetbrains.annotations.Nullable;
 import team.lodestar.lodestone.systems.block.LodestoneBlockProperties;
-import team.lodestar.lodestone.systems.datagen.LodestoneDatagenBlockData;
+import team.lodestar.lodestone.modules.datagen.LodestoneDatagenBlockData;
 
-import java.util.Collection;
 import java.util.Comparator;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;

@@ -1,12 +1,10 @@
-package team.lodestar.lodestone.data;
+package team.lodestar.lodestone.modules.datagen.implementation;
 
 import net.minecraft.core.*;
 import net.minecraft.core.HolderLookup.*;
 import net.minecraft.data.*;
 import net.minecraft.data.tags.*;
-import net.minecraft.tags.*;
 import net.minecraft.world.damagesource.*;
-import team.lodestar.lodestone.*;
 import team.lodestar.lodestone.registry.common.tag.*;
 
 import java.util.concurrent.*;

@@ -1,4 +1,4 @@
-package team.lodestar.lodestone.systems.datagen.providers;
+package team.lodestar.lodestone.modules.datagen.providers;
 
 import io.github.fabricators_of_create.porting_lib.data.ExistingFileHelper;
 import io.github.fabricators_of_create.porting_lib.models.generators.ItemModelProvider;

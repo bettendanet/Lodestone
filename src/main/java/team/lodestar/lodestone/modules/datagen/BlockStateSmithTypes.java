@@ -1,4 +1,4 @@
-package team.lodestar.lodestone.systems.datagen;
+package team.lodestar.lodestone.modules.datagen;
 
 import io.github.fabricators_of_create.porting_lib.models.generators.BlockModelBuilder;
 import io.github.fabricators_of_create.porting_lib.models.generators.ConfiguredModel;
@@ -6,8 +6,8 @@ import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.*;
-import team.lodestar.lodestone.systems.datagen.statesmith.BlockStateSmith;
-import team.lodestar.lodestone.systems.datagen.statesmith.ModularBlockStateSmith;
+import team.lodestar.lodestone.modules.datagen.smith.blockstate.BlockStateSmith;
+import team.lodestar.lodestone.modules.datagen.smith.blockstate.ModularBlockStateSmith;
 
 @SuppressWarnings("unused")
 public class BlockStateSmithTypes {

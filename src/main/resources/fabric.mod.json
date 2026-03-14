@@ -21,7 +21,7 @@
       "team.lodestar.lodestone.LodestoneLibClient"
     ],
     "fabric-datagen": [
-      "team.lodestar.lodestone.data.LodestoneDatagen"
+      "team.lodestar.lodestone.modules.datagen.implementation.LodestoneDatagen"
     ],
     "mixinsquared": [
       "team.lodestar.lodestone.LodestoneMixinPlugin"

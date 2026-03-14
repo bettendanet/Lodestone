@@ -1,11 +1,11 @@
-package team.lodestar.lodestone.systems.datagen.statesmith;
+package team.lodestar.lodestone.modules.datagen.smith.blockstate;
 
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.minecraft.world.level.block.Block;
 import team.lodestar.lodestone.LodestoneLib;
-import team.lodestar.lodestone.systems.datagen.ItemModelSmithTypes;
-import team.lodestar.lodestone.systems.datagen.itemsmith.ItemModelSmith;
-import team.lodestar.lodestone.systems.datagen.providers.LodestoneBlockStateProvider;
+import team.lodestar.lodestone.modules.datagen.ItemModelSmithTypes;
+import team.lodestar.lodestone.modules.datagen.smith.itemmodel.ItemModelSmith;
+import team.lodestar.lodestone.modules.datagen.providers.LodestoneBlockStateProvider;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,7 +1,7 @@
-package team.lodestar.lodestone.systems.datagen.itemsmith;
+package team.lodestar.lodestone.modules.datagen.smith.itemmodel;
 
 import net.minecraft.world.item.Item;
-import team.lodestar.lodestone.systems.datagen.providers.LodestoneItemModelProvider;
+import team.lodestar.lodestone.modules.datagen.providers.LodestoneItemModelProvider;
 
 import java.util.ArrayList;
 import java.util.Collection;

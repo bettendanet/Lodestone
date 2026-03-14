@@ -1,7 +1,7 @@
-package team.lodestar.lodestone.systems.datagen.itemsmith;
+package team.lodestar.lodestone.modules.datagen.smith.itemmodel;
 
 import net.minecraft.world.item.*;
-import team.lodestar.lodestone.systems.datagen.providers.*;
+import team.lodestar.lodestone.modules.datagen.providers.*;
 
 import java.util.function.*;
 

@@ -1,8 +1,8 @@
-package team.lodestar.lodestone.systems.datagen.statesmith;
+package team.lodestar.lodestone.modules.datagen.smith.blockstate;
 
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.minecraft.world.level.block.Block;
-import team.lodestar.lodestone.systems.datagen.providers.LodestoneBlockStateProvider;
+import team.lodestar.lodestone.modules.datagen.providers.LodestoneBlockStateProvider;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
