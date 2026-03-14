@@ -6,26 +6,6 @@ float linearizeDepth(float depth) {
     return (2.0 * near) / (far + near - depth * (far - near));
 }
 
-float fetch(samplerBuffer DataBuffer, int index) {
-    return texelFetch(DataBuffer, index).r;
-}
-
-vec2 fetch2(samplerBuffer DataBuffer, int startIndex) {
-    return vec2(fetch(DataBuffer, startIndex), fetch(DataBuffer, startIndex + 1));
-}
-
-vec3 fetch3(samplerBuffer DataBuffer, int startIndex) {
-    return vec3(fetch(DataBuffer, startIndex), fetch(DataBuffer, startIndex + 1), fetch(DataBuffer, startIndex + 2));
-}
-
-vec4 fetch4(samplerBuffer DataBuffer, int startIndex) {
-    return vec4(fetch(DataBuffer, startIndex), fetch(DataBuffer, startIndex + 1), fetch(DataBuffer, startIndex + 2), fetch(DataBuffer, startIndex + 3));
-}
-
-bool fetchBool(samplerBuffer DataBuffer, int index) {
-    return fetch(DataBuffer, index) > 0.5;
-}
-
 float getDepth(sampler2D DepthBuffer, vec2 uv) {
     return texture(DepthBuffer, uv).r;
 }
@@ -79,4 +59,12 @@ vec4 applyFog(vec4 initialColor, float fogStart, float fogEnd, vec4 fogColor, fl
 
 float fogDistance(vec3 Position, int FogShape) {
     return fog_distance(Position, FogShape);
+}
+
+vec4 quantize(vec4 color, float levels) {
+    return floor(color*(levels-1)+0.5)/(levels-1);
+}
+
+vec3 quantize(vec3 color, float levels) {
+    return floor(color*(levels-1)+0.5)/(levels-1);
 }
