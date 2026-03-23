@@ -14,10 +14,6 @@ public class ClientConfig extends LodestoneConfig {
             builder.comment("Should particles render on the delayed buffer? This means they will properly render after clouds & water do, but could cause issues with mods like sodium.")
                     .define("buffer_particles", true));
 
-    public static ConfigValueHolder<Boolean> IGNORE_MOD_COMPATIBILITY_RENDERING = new ConfigValueHolder<>(LODESTONE, "client/graphics/particle", builder ->
-            builder.comment("Ignore the compatibility tweaks to particle rendering when other mods are loaded? If this is turned on, some compatibilities tweaks made for other mods like AsyncParticles will be disabled and there may be some rendering issues and crashes.")
-                    .define("compat_render_particles", false));
-
     public static ConfigValueHolder<Boolean> EXPERIMENTAL_FABULOUS_LAYERING = new ConfigValueHolder<>(LODESTONE, "client/graphics", builder ->
             builder.comment("Should lodestone use experimental fabulous graphics layering? You pretty much never wanna turn this on at the moment unless you're a developer.")
                     .define("experimental_fabulous_layering", false));

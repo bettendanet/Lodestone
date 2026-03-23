@@ -17,8 +17,8 @@ public class LodestoneItemTagDatagen extends FabricTagProvider.ItemTagProvider {
     }
 
     @Override
-    public String getName() {
-        return "Malum Item Tags";
+    public @NotNull String getName() {
+        return "Lodestone Item Tags";
     }
 
     @Override
