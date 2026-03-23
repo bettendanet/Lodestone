@@ -143,6 +143,21 @@ public class LodestoneRenderTypes extends RenderStateShard {
     public static LodestoneRenderType createGenericRenderType(String name, VertexFormat format, VertexFormat.Mode mode, LodestoneCompositeStateBuilder builder) {
         return createGenericRenderType(name, format, mode, builder, null);
     }
+
+    /**
+     * A render type that fades out the texture's alpha channel based on depth proximity.
+     */
+    public static final RenderTypeProvider TEXTURE_FADE = new RenderTypeProvider((token) ->
+            createGenericRenderType("texture_fade", POSITION_COLOR_TEX_LIGHTMAP,
+                    QUADS, builder(token, StateShards.NORMAL_TRANSPARENCY, LodestoneShaders.TEXTURE_FADE, CULL, LIGHTMAP)));
+
+    /**
+     * Who knows what this one might do.
+     */
+    public static final RenderTypeProvider DEBUG_SDF = new RenderTypeProvider((token) ->
+            createGenericRenderType("debug_sdf", POSITION,
+                    QUADS, builder(token, LodestoneShaders.DEBUG_SDF, CULL)));
+
     /**
      * Creates a custom render type and creates a buffer builder for it.
      */

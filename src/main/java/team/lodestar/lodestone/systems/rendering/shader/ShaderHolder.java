@@ -1,18 +1,21 @@
 package team.lodestar.lodestone.systems.rendering.shader;
 
 import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.renderer.RenderStateShard;
 import net.minecraft.client.renderer.ShaderInstance;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceProvider;
+import team.lodestar.lodestone.LodestoneLib;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class ShaderHolder {
+public class ShaderHolder implements LodestoneShader {
 
     public final ResourceLocation shaderLocation;
     public final VertexFormat shaderFormat;
@@ -49,5 +52,15 @@ public class ShaderHolder {
 
     public RenderStateShard.ShaderStateShard getShard() {
         return shard;
+    }
+
+    @Override
+    public void register(ResourceProvider provider, List<Pair<ShaderInstance, Consumer<ShaderInstance>>> shaderList) {
+        try {
+            shaderList.add(Pair.of(createInstance(provider), this::setShaderInstance));
+        } catch (IOException e) {
+            LodestoneLib.LOGGER.error("Error registering shader", e);
+            e.printStackTrace();
+        }
     }
 }

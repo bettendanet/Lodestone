@@ -5,7 +5,6 @@ import io.github.fabricators_of_create.porting_lib.config.ModConfig;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
-import net.fabricmc.fabric.api.client.rendering.v1.CoreShaderRegistrationCallback;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import team.lodestar.lodestone.config.ClientConfig;
 import team.lodestar.lodestone.events.ClientRuntimeEvents;
@@ -19,6 +18,7 @@ import team.lodestar.lodestone.registry.common.particle.LodestoneParticleTypes;
 import team.lodestar.lodestone.systems.particle.world.type.LodestoneItemCrumbsParticleType;
 import team.lodestar.lodestone.systems.particle.world.type.LodestoneWorldParticleType;
 import team.lodestar.lodestone.systems.postprocess.PostProcessHandler;
+import team.lodestar.lodestone.systems.rendering.shader.compute.SystemDetails;
 
 import static team.lodestar.lodestone.registry.common.particle.LodestoneParticleTypes.*;
 import static team.lodestar.lodestone.registry.common.particle.LodestoneParticleTypes.ITEM_PARTICLE;
@@ -26,6 +26,8 @@ import static team.lodestar.lodestone.registry.common.particle.LodestoneParticle
 public class LodestoneLibClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        SystemDetails.initialize();
+
         ConfigRegistry.registerConfig(LodestoneLib.LODESTONE, ModConfig.Type.CLIENT, ClientConfig.clientSpec);
 
         LodestoneBlockEntities.ClientOnly.registerRenderer();
